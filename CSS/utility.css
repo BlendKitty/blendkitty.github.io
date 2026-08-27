@@ -1,0 +1,61 @@
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.kewl-button {
+	background-color: #461079;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	margin: 10px 5px;
+	cursor: pointer;
+	border-radius: 16px;
+	font-family: 'poppinsregular';
+}
+
+.game-iframe {
+	width: 75%;
+	max-width: 75%;
+	aspect-ratio: 16 / 9;
+	border: none;
+	display: block;
+	margin: 20px auto;
+}
+
+a:link {
+	color: rgb(251, 251, 43);
+}
+
+a:visited {
+	color: #cc8800;
+}
+
+
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #0066B0; 
+}
+
+.kewl-button a:link {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.kewl-button a:visited {
+	color: rgb(255, 255, 255);
+}
+
+.kewl-button a:link {
+	color: rgb(255, 255, 255);
+}

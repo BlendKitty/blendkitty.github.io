@@ -1,0 +1,32 @@
+/*
+Source - https://stackoverflow.com/questions/78348888/creating-a-js-circle-animation-from-the-cursor-when-someone-clicks-in-a-certain/78349169#78349169
+Posted by null
+Retrieved 2026-06-02, License - null
+*/
+
+.click-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #8a26fc;
+  border-radius: 50%;
+  pointer-events: none;
+  /* Ensure the circle doesn't interfere with clicks */
+}
+
+.click-animation {
+  animation: click-effect 0.33s ease-out forwards;
+  /* Decreased animation duration and added "forwards" to keep the final state */
+}
+
+@keyframes click-effect {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(3);
+    /* Increased scale for larger circles */
+    opacity: 0;
+  }
+}

@@ -1,0 +1,105 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   
+   
+@import './VFX/ClickCircle.css';
+@import './utility.css';
+
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#00B2FF, #0066B0) no-repeat fixed;
+  background-size: auto 100vh;
+  overflow-x: hidden;
+  cursor: url("../Images/Cursors/cursor.png"), auto;
+}
+
+html.darkmode {
+  background: linear-gradient(#39464b, #1b2024) no-repeat fixed;
+}
+
+html.darkmode body {
+  color: white;
+}
+
+html.darkmode .maincontent {
+  border-color: #326d85
+}
+
+html.darkmode .othercontent {
+  border-color: #899230
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: white;
+  font-family: 'poppinsregular';
+  position: relative;
+  background: none;
+  overflow-x: hidden;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a:hover {
+  cursor: url("../Images/Cursors/cursor_hover.png"), url("../Images/Cursors/cursor.png"), pointer;
+}
+
+@font-face {
+  font-family: 'poppinsregular';
+  src: url(../Fonts/Poppins/poppins-regular-webfont.woff);
+}
+	
+.maincontent {
+  border-radius: 20px;
+  padding: 25px;
+  /* background-color: rgb(207 232 220); */
+  border: 2px solid rgb(251, 251, 43);
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.othercontent {
+  border-radius: 20px;
+  padding: 25px;
+  /* background-color: rgb(207 232 220); */
+  border: 2px solid rgb(40, 40, 40);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.fullscreen-button {
+  background-color: #461079;
+  border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 24px;
+	margin: 10px auto;
+	cursor: pointer;
+	border-radius: 16px;
+  font-family: 'poppinsregular';
+  cursor: url("../Images/Cursors/cursor_hover.png"), url("../Images/Cursors/cursor.png"), pointer;
+}
+
+.darkmode-button {
+  background-color: #222e2e;
+  border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 24px;
+	margin: 10px auto;
+	cursor: pointer;
+	border-radius: 16px;
+  font-family: 'poppinsregular';
+  cursor: url("../Images/Cursors/cursor_hover.png"), url("../Images/Cursors/cursor.png"), pointer;
+}
